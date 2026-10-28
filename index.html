@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expiry Date Alert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Expiry Date Alert System</h1>
+        <p class="subtitle">Product Expiry Monitoring</p>
+
+        <div class="form-box">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName"
+                   placeholder="Enter product name">
+
+            <label for="expiryDate">Expiry Date</label>
+            <input type="date" id="expiryDate">
+
+            <button id="addButton" type="button">Add Product</button>
+        </div>
+
+        <div class="summary">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Expiring Soon</h3>
+                <p id="soonCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Expired</h3>
+                <p id="expiredCount">0</p>
+            </div>
+        </div>
+
+        <h2>Product List</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Expiry Date</th>
+                        <th>Days Left</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="productList">
+                    <!-- Products will appear here -->
+                </tbody>
+            </table>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
