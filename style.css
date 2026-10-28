@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #222;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #153e75;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f7faff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dce6f1;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #1769aa;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104e82;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.card {
+    text-align: center;
+    background: #e8f2ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #153e75;
+}
+
+h2 {
+    margin: 25px 0 15px;
+    color: #153e75;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #153e75;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f5f8fc;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.safe {
+    color: #16803c;
+}
+
+.soon {
+    color: #c77700;
+}
+
+.expired {
+    color: #d62828;
+}
+
+.delete-button {
+    background: #d62828;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background: #a71919;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+}
